@@ -1,0 +1,7 @@
+C:\Users\joaor\source\repos\ContadorDeNotas\ContadorDeNotas\bin\Debug\ContadorDeNotas.exe.config
+C:\Users\joaor\source\repos\ContadorDeNotas\ContadorDeNotas\bin\Debug\ContadorDeNotas.exe
+C:\Users\joaor\source\repos\ContadorDeNotas\ContadorDeNotas\bin\Debug\ContadorDeNotas.pdb
+C:\Users\joaor\source\repos\ContadorDeNotas\ContadorDeNotas\obj\Debug\ContadorDeNotas.csproj.CoreCompileInputs.cache
+C:\Users\joaor\source\repos\ContadorDeNotas\ContadorDeNotas\obj\Debug\ContadorDeNotas.exe
+C:\Users\joaor\source\repos\ContadorDeNotas\ContadorDeNotas\obj\Debug\ContadorDeNotas.pdb
+C:\Users\joaor\source\repos\ContadorDeNotas\ContadorDeNotas\obj\Debug\ContadorDeNotas.csprojAssemblyReference.cache
