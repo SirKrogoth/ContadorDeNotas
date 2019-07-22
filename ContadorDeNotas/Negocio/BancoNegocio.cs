@@ -5,7 +5,7 @@ namespace ContadorDeNotas.Negocio
 {
     public class BancoNegocio
     {
-        public List<int> GerarNotasDisponiveisEmTerminal()
+        public IEnumerator<int> GerarNotasDisponiveisEmTerminal()
         {
             var lista = new List<int>();
 
@@ -14,16 +14,16 @@ namespace ContadorDeNotas.Negocio
             lista.Add(20);
             lista.Add(10);
 
-            return lista;
+            return lista.GetEnumerator();
         }
 
-        public List<int> SacarNotasCliente(int valorParaSaque)
+        public List<int> SacarNotasCliente(int valorParaSaque, IEnumerator<int> cedulasDisponiveisParaSaque)
         {
-            var listaNotasCaixaEletronico = GerarNotasDisponiveisEmTerminal();
             List<int> notasParaSaque = new List<int>();
 
-            foreach(int nota in listaNotasCaixaEletronico)
+            while (cedulasDisponiveisParaSaque.MoveNext())
             {
+                var nota = cedulasDisponiveisParaSaque.Current;
                 int aux = valorParaSaque / nota;
                 valorParaSaque -= aux * nota;
 
@@ -35,6 +35,8 @@ namespace ContadorDeNotas.Negocio
                     }
                 }
             }
+
+            cedulasDisponiveisParaSaque.Reset();
 
             return notasParaSaque;
 
